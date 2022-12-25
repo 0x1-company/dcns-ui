@@ -19,7 +19,7 @@ import { namehash } from './namehash'
 
 //import { checkLabelHash } from '../updaters/preImageDB'
 
-const supportedTopLevelDomains = ['eth', 'bch', 'doge', 'dc', 'ethw']
+const supportedTopLevelDomains = ['dc', 'dogechain']
 const topLevelDomainSupported = (tld) => {
   return tld && supportedTopLevelDomains.indexOf(tld.toLowerCase()) !== -1;
 }
@@ -43,6 +43,9 @@ async function getEtherScanAddr() {
     case 4:
     case '4':
       return 'https://rinkeby.etherscan.io/'
+    case 2000:
+    case '2000':
+      return 'https://explorer.dogechain.dog/'
     default:
       return 'https://etherscan.io/'
   }

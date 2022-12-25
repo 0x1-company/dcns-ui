@@ -10,7 +10,7 @@ export async function setupENS({
   enforceReadOnly,
   enforceReload,
   infura,
-  topLevelDomain = 'doge'
+  topLevelDomain = 'dc'
 } = {}) {
   const { provider } = await setupWeb3({
     customProvider,
