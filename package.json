@@ -1,6 +1,6 @@
 {
-  "name": "@bchdomains/ui",
-  "version": "3.3.32",
+  "name": "@dcnsdomains/ui",
+  "version": "4.0.0",
   "description": "UI components and reusable code",
   "main": "src/index.js",
   "files": [

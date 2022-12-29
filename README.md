@@ -43,7 +43,7 @@ Setup for the library is done by calling the `setupENS` function. It can be opti
 It will return an object with the registrar and ens object. The ens object will deal with name resolution, reverse records and dealing with the registry. The registrar object has functions to interact the permanent registrar, legacy auction registrar and test registrar (just on test net)
 
 ```js
-import { setupENS } from '@ensdomains/ui'
+import { setupENS } from '@dcnsdomains/ui'
 
 window.addEventListener('load', async () => {
   const { registrar, ens } = await setupENS()
@@ -71,7 +71,7 @@ options (object): {
 #### Example
 
 ```js
-import { setupENS } from '@ensdomains/ui'
+import { setupENS } from '@dcnsdomains/ui'
 
 window.addEventListener('load', async () => {
   const { ens, registrar } = await setupENS()
