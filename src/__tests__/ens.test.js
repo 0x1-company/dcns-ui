@@ -72,7 +72,7 @@ describe('Blockchain tests', () => {
     })
 
     test('ens registry, resolver and reverse registrar deployed', async () => {
-      const eth = getNamehash('eth')
+      const eth = getNamehash('dc')
       const ensContract = ens.getENSContractInstance()
       const ethOwner = await ensContract.owner(eth)
       expect(ethOwner).toBe(baseRegistrar)

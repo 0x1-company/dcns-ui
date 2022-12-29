@@ -706,13 +706,13 @@ export default class Registrar {
   }
 }
 
-async function getEthResolver(ENS, topLevelDomain = 'eth') {
+async function getEthResolver(ENS, topLevelDomain = 'dc') {
   const resolverAddr = await ENS.resolver(namehash(topLevelDomain))
   const provider = await getProvider()
   return getResolverContract({ address: resolverAddr, provider })
 }
 
-export async function setupRegistrar(registryAddress, topLevelDomain = 'eth') {
+export async function setupRegistrar(registryAddress, topLevelDomain = 'dc') {
   const provider = await getProvider()
   const ENS = getENSContract({ address: registryAddress, provider })
   const Resolver = await getEthResolver(ENS)
