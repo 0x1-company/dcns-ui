@@ -54,33 +54,9 @@ function getLabelhash(label) {
 }
 
 export const contracts = {
-  1: {
-    registry: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
-  },
-  3: {
-    registry: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
-  },
-  4: {
-    registry: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
-  },
-  5: {
-    registry: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
-  },
-  10000: {
-    registry: '0xCfb86556760d03942EBf1ba88a9870e67D77b627'
-  },
-  // 10001: {
-  //   registry: '0x32f1FBE59D771bdB7FB247FE97A635f50659202b'
-  // },
-  10001: {
-    registry: '0xefc1c4E33c7831256C37F986B071f2BA81F8D0d3'
-  },
   2000: {
-    registry: '0x834C46666c1dE7367B252682B9ABAb458DD333bf',
+    registry: '0x8582C4B94D3815CAcF0ebFeAc0Ac30c340Fb8056',
   },
-  568: {
-    registry: '0x08850859CE6B62A39918c8B806AfbE3442fE7b0b',
-  }
 }
 
 export class ENS {
