@@ -719,10 +719,7 @@ export async function setupRegistrar(registryAddress, topLevelDomain = 'dc') {
 
   let ethAddress = await ENS.owner(namehash(topLevelDomain))
 
-  let controllerAddress = await Resolver.interfaceImplementer(
-    namehash(topLevelDomain),
-    permanentRegistrarInterfaceId
-  )
+  let controllerAddress = '0xFB071fC8D14Faaa04FBb31bf7547365D847A74f2'
   let legacyAuctionRegistrarAddress = await Resolver.interfaceImplementer(
     namehash(topLevelDomain),
     legacyRegistrarInterfaceId
