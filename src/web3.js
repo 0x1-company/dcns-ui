@@ -10,41 +10,13 @@ let readOnly = false
 let requested = false
 let address
 
-const defaultNetworkId = 10001
+const defaultNetworkId = 2000
 export const _getProvider = (networkId) => {
   switch (networkId) {
-    case 10000:
-      return new ethers.providers.JsonRpcProvider(getNetworkProviderUrl(networkId),
-      {
-        name: "smartbch",
-        chainId: networkId,
-        ensAddress: contracts[networkId].registry
-      })
-    // case 10001:
-    //   return new ethers.providers.JsonRpcProvider(getNetworkProviderUrl(networkId),
-    //   {
-    //     name: "smartbch-amber",
-    //     chainId: networkId,
-    //     ensAddress: contracts[networkId].registry
-    //   })
-    case 10001:
-      return new ethers.providers.JsonRpcProvider(getNetworkProviderUrl(networkId),
-      {
-        name: "ethpow",
-        chainId: networkId,
-        ensAddress: contracts[networkId].registry
-      })
     case 2000:
       return new ethers.providers.JsonRpcProvider(getNetworkProviderUrl(networkId),
       {
         name: "dogechain",
-        chainId: networkId,
-        ensAddress: contracts[networkId].registry
-      })
-    case 568:
-      return new ethers.providers.JsonRpcProvider(getNetworkProviderUrl(networkId),
-      {
-        name: "dogechain-testnet",
         chainId: networkId,
         ensAddress: contracts[networkId].registry
       })
