@@ -728,25 +728,10 @@ export async function setupRegistrar(registryAddress, topLevelDomain = 'dc') {
     legacyRegistrarInterfaceId
   )
 
-  let bulkRenewalAddress = await Resolver.interfaceImplementer(
-    namehash(topLevelDomain),
-    bulkRenewalInterfaceId
-  )
-
-  let priceOracleAddress = await Resolver.interfaceImplementer(
-    namehash(topLevelDomain),
-    priceOracleInterfaceId
-  )
-
-  let nftPriceOracleAddress = await Resolver.interfaceImplementer(
-    namehash(topLevelDomain),
-    nftPriceOracleInterfaceId
-  )
-
-  let nftRegistrarControllerAddress = await Resolver.interfaceImplementer(
-    namehash(topLevelDomain),
-    nftRegistrarControllerInterfaceId
-  )
+  let bulkRenewalAddress = '0x4c0c7ea3D5F273D170F78C7125033089Ae8b484c'
+  let priceOracleAddress = '0x2F6D1c9B2f57Bc23d5BA7EFf1735A90B247B4cd4'
+  let nftPriceOracleAddress = '0x9AaBBc10Bcb6d1f0629beb51ADC55ac9ed205Ef2'
+  let nftRegistrarControllerAddress = '0x36934c424ddA6dC5eF0F996856b2Ef61b50AE213'
 
   return new Registrar({
     registryAddress,
