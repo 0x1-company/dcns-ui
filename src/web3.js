@@ -188,7 +188,7 @@ export function getNetworkProviderUrl(id) {
     case '10001':
       return `https://mainnet.ethereumpow.org`
     case '2000':
-      return `https://rpc.yodeswap.dog`
+      return `https://dogechain.ankr.com`
     case '568':
       return `https://rpc-testnet.dogechain.dog`
     default:
