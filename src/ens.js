@@ -73,7 +73,7 @@ export const contracts = {
     registry: '0xefc1c4E33c7831256C37F986B071f2BA81F8D0d3'
   },
   2000: {
-    registry: '0x8582C4B94D3815CAcF0ebFeAc0Ac30c340Fb8056',
+    registry: '0x834C46666c1dE7367B252682B9ABAb458DD333bf',
   },
   568: {
     registry: '0x08850859CE6B62A39918c8B806AfbE3442fE7b0b',
