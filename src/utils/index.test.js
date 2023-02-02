@@ -3,8 +3,8 @@ import { validateName, namehash } from './'
 test('validateName returns true for valid names', () => {
   expect(validateName('vitalik')).toBe('vitalik')
   expect(validateName('Vitalik')).toBe('vitalik')
-  expect(validateName('Vitalik.eth')).toBe('vitalik.dc')
-  expect(validateName('sub.Vitalik.eth')).toBe('sub.vitalik.dc')
+  expect(validateName('Vitalik.dc')).toBe('vitalik.dc')
+  expect(validateName('sub.Vitalik.dc')).toBe('sub.vitalik.dc')
 })
 
 test('validateName returns false for invalid names', () => {
